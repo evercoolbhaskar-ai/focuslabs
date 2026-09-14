@@ -28,7 +28,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="site.css?v=2" />
+<link rel="stylesheet" href="site.css?v=3" />
 </head>
 <body>
 
@@ -57,68 +57,74 @@
         <span class="w" style="--i:0">One</span> <span class="w" style="--i:1">chain</span>
         <em><span class="w" style="--i:2">at</span> <span class="w" style="--i:3">a</span> <span class="w" style="--i:4">time.</span></em>
       </h1>
-      <p class="lede hero-lede">We choose one workflow that keeps breaking in one industry, give it our complete attention, and build the product that solves it for everyone who works inside it.</p>
 
-      <div class="focus">
-        <svg class="chain" id="focusChain" viewBox="0 0 384 100" role="img" aria-label="A chain of five links. Four drift out of focus; the one in the middle is sharp, green and framed.">
-          <defs>
-            <clipPath id="j1" clipPathUnits="userSpaceOnUse"><rect x="70" y="0" width="46" height="50" /></clipPath>
-            <clipPath id="j2" clipPathUnits="userSpaceOnUse"><rect x="136" y="0" width="46" height="50" /></clipPath>
-            <clipPath id="j3" clipPathUnits="userSpaceOnUse"><rect x="202" y="50" width="46" height="50" /></clipPath>
-            <clipPath id="j4" clipPathUnits="userSpaceOnUse"><rect x="268" y="0" width="46" height="50" /></clipPath>
+      <div class="hero-row">
+        <p class="lede hero-lede">We choose one workflow that keeps breaking in one industry, give it our complete attention, and build the product that solves it for everyone who works inside it.</p>
 
-            <!-- The scan beam only shows where it crosses a link. -->
-            <mask id="links-mask" maskUnits="userSpaceOnUse" x="-20" y="-20" width="424" height="140">
-              <g fill="none" stroke="#fff" stroke-width="8" stroke-linejoin="round">
-                <use href="#hex" x="60" y="50" />
-                <use href="#hex" x="126" y="50" />
-                <use href="#hex" x="192" y="50" />
-                <use href="#hex" x="258" y="50" />
-                <use href="#hex" x="324" y="50" />
-              </g>
-            </mask>
-            <linearGradient id="beam-fill" x1="0" y1="0" x2="1" y2="0">
-              <stop offset="0" stop-color="#3DDC84" stop-opacity="0" />
-              <stop offset="0.5" stop-color="#3DDC84" stop-opacity="1" />
-              <stop offset="1" stop-color="#3DDC84" stop-opacity="0" />
-            </linearGradient>
-          </defs>
+        <div class="focus">
+          <svg class="chain" id="focusChain" viewBox="0 0 384 100" role="img" aria-label="A chain of five links. Four drift out of focus; the one in the middle is sharp, green and framed.">
+            <defs>
+              <clipPath id="j1" clipPathUnits="userSpaceOnUse"><rect x="70" y="0" width="46" height="50" /></clipPath>
+              <clipPath id="j2" clipPathUnits="userSpaceOnUse"><rect x="136" y="0" width="46" height="50" /></clipPath>
+              <clipPath id="j3" clipPathUnits="userSpaceOnUse"><rect x="202" y="50" width="46" height="50" /></clipPath>
+              <clipPath id="j4" clipPathUnits="userSpaceOnUse"><rect x="268" y="0" width="46" height="50" /></clipPath>
 
-          <use href="#hex" x="60"  y="50" class="link link-dim" />
-          <use href="#hex" x="126" y="50" class="link link-dim" />
-          <use href="#hex" x="258" y="50" class="link link-dim" />
-          <use href="#hex" x="324" y="50" class="link link-dim" />
-          <use href="#hex" x="60"  y="50" class="link link-dim" clip-path="url(#j1)" />
-          <use href="#hex" x="258" y="50" class="link link-dim" clip-path="url(#j4)" />
+              <!-- The scan beam only shows where it crosses a link. -->
+              <mask id="links-mask" maskUnits="userSpaceOnUse" x="-20" y="-20" width="424" height="140">
+                <g fill="none" stroke="#fff" stroke-width="8" stroke-linejoin="round">
+                  <use href="#hex" x="60" y="50" />
+                  <use href="#hex" x="126" y="50" />
+                  <use href="#hex" x="192" y="50" />
+                  <use href="#hex" x="258" y="50" />
+                  <use href="#hex" x="324" y="50" />
+                </g>
+              </mask>
+              <linearGradient id="beam-fill" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="#3DDC84" stop-opacity="0" />
+                <stop offset="0.5" stop-color="#3DDC84" stop-opacity="1" />
+                <stop offset="1" stop-color="#3DDC84" stop-opacity="0" />
+              </linearGradient>
+            </defs>
 
-          <use href="#hex" x="192" y="50" class="link link-focus" />
+            <use href="#hex" x="60"  y="50" class="link link-dim" />
+            <use href="#hex" x="126" y="50" class="link link-dim" />
+            <use href="#hex" x="258" y="50" class="link link-dim" />
+            <use href="#hex" x="324" y="50" class="link link-dim" />
+            <use href="#hex" x="60"  y="50" class="link link-dim" clip-path="url(#j1)" />
+            <use href="#hex" x="258" y="50" class="link link-dim" clip-path="url(#j4)" />
 
-          <use href="#hex" x="126" y="50" class="link link-dim" clip-path="url(#j2)" />
-          <use href="#hex" x="258" y="50" class="link link-dim" clip-path="url(#j3)" />
+            <use href="#hex" x="192" y="50" class="link link-focus" />
 
-          <g mask="url(#links-mask)">
-            <rect class="beam" x="-6" y="-10" width="32" height="120" fill="url(#beam-fill)" />
-          </g>
+            <use href="#hex" x="126" y="50" class="link link-dim" clip-path="url(#j2)" />
+            <use href="#hex" x="258" y="50" class="link link-dim" clip-path="url(#j3)" />
 
-          <path class="reticle" d="M136 8V-4H148M236 -4H248V8M248 92V104H236M148 104H136V92" />
-        </svg>
+            <g mask="url(#links-mask)">
+              <rect class="beam" x="-6" y="-10" width="32" height="120" fill="url(#beam-fill)" />
+            </g>
 
-        <p class="readout" id="readout"><i class="readout-dot" aria-hidden="true"></i><span id="readoutText">focus locked · chain 01 · real estate</span></p>
+            <path class="reticle" d="M136 8V-4H148M236 -4H248V8M248 92V104H236M148 104H136V92" />
+          </svg>
+
+          <p class="readout" id="readout"><i class="readout-dot" aria-hidden="true"></i><span id="readoutText">focus locked · chain 01 · real estate</span></p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- ── 01 The name ── -->
   <section class="block" id="the-name">
-    <div class="wrap">
-      <p class="label reveal">01 · The name</p>
-      <h2 class="heading reveal">Every business runs on a chain.</h2>
-      <div class="prose reveal">
+    <div class="wrap split">
+      <div class="split-head">
+        <p class="label reveal">01 · The name</p>
+        <h2 class="heading reveal">Every business runs on a chain.</h2>
+      </div>
+
+      <div class="split-body prose reveal">
         <p>A chain is the path work takes from start to finish. In real estate it runs from an enquiry to a call back, a shortlist, a site visit and, finally, a booking.</p>
         <p>Every link depends on the one before it. When a single link slips, everything after it slips too.</p>
       </div>
 
-      <figure class="steps-figure reveal">
+      <figure class="steps-figure split-wide reveal">
         <ol class="steps" aria-label="The real-estate chain">
           <li class="step">Enquiry</li>
           <li class="step step-slip">Call back</li>
@@ -133,36 +139,40 @@
 
   <!-- ── 02 How we work ── -->
   <section class="block" id="how-we-work">
-    <div class="wrap">
-      <p class="label reveal">02 · How we work</p>
-      <h2 class="heading reveal">Most companies spread thin. <em>We go narrow.</em></h2>
+    <div class="wrap split">
+      <div class="split-head">
+        <p class="label reveal">02 · How we work</p>
+        <h2 class="heading reveal">Most companies spread thin. <em>We go narrow.</em></h2>
+      </div>
 
-      <ol class="principles">
-        <li class="principle reveal">
-          <span class="principle-num" aria-hidden="true">01</span>
-          <h3>One chain.</h3>
-          <p>We pick a single workflow in a single industry, and say no to everything else, however tempting.</p>
-        </li>
-        <li class="principle reveal">
-          <span class="principle-num" aria-hidden="true">02</span>
-          <h3>Total focus.</h3>
-          <p>We learn the chain from the people who live inside it, in their words, until the product feels obvious to them.</p>
-        </li>
-        <li class="principle reveal">
-          <span class="principle-num" aria-hidden="true">03</span>
-          <h3>Solved for many.</h3>
-          <p>We don't build one-off projects. We build one product that solves the chain for a large base of customers.</p>
-        </li>
-        <li class="principle reveal">
-          <span class="principle-num" aria-hidden="true">04</span>
-          <h3>Then, the next.</h3>
-          <p>We move to the next chain only when this one is solved.</p>
-        </li>
-      </ol>
+      <div class="split-body">
+        <ol class="principles">
+          <li class="principle reveal">
+            <span class="principle-num" aria-hidden="true">01</span>
+            <h3>One chain.</h3>
+            <p>We pick a single workflow in a single industry, and say no to everything else, however tempting.</p>
+          </li>
+          <li class="principle reveal">
+            <span class="principle-num" aria-hidden="true">02</span>
+            <h3>Total focus.</h3>
+            <p>We learn the chain from the people who live inside it, in their words, until the product feels obvious to them.</p>
+          </li>
+          <li class="principle reveal">
+            <span class="principle-num" aria-hidden="true">03</span>
+            <h3>Solved for many.</h3>
+            <p>We don't build one-off projects. We build one product that solves the chain for a large base of customers.</p>
+          </li>
+          <li class="principle reveal">
+            <span class="principle-num" aria-hidden="true">04</span>
+            <h3>Then, the next.</h3>
+            <p>We move to the next chain only when this one is solved.</p>
+          </li>
+        </ol>
 
-      <blockquote class="pull reveal" id="focus">
-        <p>Focus isn't doing one thing first. It is doing only one thing, until it is done.</p>
-      </blockquote>
+        <blockquote class="pull reveal" id="focus">
+          <p>Focus isn't doing one thing first. It is doing only one thing, until it is done.</p>
+        </blockquote>
+      </div>
     </div>
   </section>
 
